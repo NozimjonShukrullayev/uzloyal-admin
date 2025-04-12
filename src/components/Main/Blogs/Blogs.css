@@ -1,0 +1,131 @@
+.blogs-container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.blog-add-btns {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.blog-table {
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.blog-action-td {
+  display: flex;
+}
+.td-images-btn{
+  background: #0056b3;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.edit-images-container{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px 0;
+}
+.edit-images-container img{
+  width: 150px;
+  height: 150px;
+}
+.blog-modal{
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.blog-modal-content {
+  max-width: 800px;
+  margin-top: 100px;
+}
+.blog-modal-content .blog-modal-inputs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.blog-modal-content h2 {
+  margin-top: 0;
+}
+.blog-modal-content input,.blog-modal-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+}
+.blog-modal-content textarea{
+  margin: 0;
+}
+
+.blog-modal-content button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.blog-modal-content button:hover {
+  background-color: #0056b3;
+}
+
+.image-modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-modal-content{
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.image-modal-content h2{
+  margin-top: 0;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.image-modal-content .close-btn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.image-modal-content .images-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+.image-modal-content .images-container img{
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
